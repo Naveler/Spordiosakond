@@ -4,7 +4,7 @@
   --txt-color: rgb(236, 236, 236); /* Text color */
 
   /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
-  --highlight-color: rgb(155, 23, 0); /* Highlight gradient color color */
+  --highlight-color: rgb(85, 32, 230); /* Highlight gradient color color */
 }
 
 * {
@@ -70,9 +70,8 @@ body {
 .container {
   /* Dimensions */
   min-width: fit-content;
-  width: 1400px;
+
   min-height: fit-content;
-  height: 55vh;
 
   /* Position */
   position: absolute;
@@ -105,19 +104,36 @@ body {
   width: 100%;
 }
 
-.activities-table table,
+.activities-table,
 .activities-table th,
 .activities-table td {
-  border: solid var(--bg-color);
+  border: solid red;
   border-width: 0px 2px;
   border-collapse: collapse;
   padding: 0.5rem 1rem;
+}
+
+.activities-table,
+.activities-table th:first-of-type,
+.activities-table td:first-of-type {
+  border-left-width: 0;
+}
+
+.activities-table,
+.activities-table th:last-of-type,
+.activities-table td:last-of-type {
+  border-right-width: 0;
 }
 
 .activities-table th {
   border-width: 0px 2px 2px 2px;
 }
 
+.activities-table th {
+  height: 2rem;
+}
+
+/* Details window */
 .details-window {
   grid-area: d;
 }
@@ -157,7 +173,7 @@ body {
 
 .day-name {
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   transform: translate(-1%, -71%);
   color: var(--el-color);
   font-weight: 600;
