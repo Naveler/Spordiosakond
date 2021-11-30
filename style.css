@@ -1,0 +1,210 @@
+:root {
+  --bg-color: rgb(236, 236, 236); /* Background color */
+  --el-color: #242424; /* Element color */
+  --txt-color: rgb(236, 236, 236); /* Text color */
+
+  /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
+  --highlight-color: rgb(155, 23, 0); /* Highlight gradient color color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+
+/* Widely shared attributes */
+.navbar,
+.activities-table,
+.details-window,
+.schedule-day {
+  background-color: var(--el-color);
+}
+
+/* Navigation bar */
+.navbar {
+  width: 100vw;
+}
+
+.nav-content {
+  width: 85%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Aligns nav links to the center vertically */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.6;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+}
+
+/* Adds space between the navbar links */
+.nav-link:not(:nth-of-type(1)) {
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* Page content */
+.container {
+  /* Dimensions */
+  min-width: fit-content;
+  width: 1400px;
+  min-height: fit-content;
+  height: 55vh;
+
+  /* Position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Content display */
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+  grid-template-areas:
+    "t t t t d d d"
+    "t t t t d d d"
+    "t t t t d d d"
+    "s s s s s s s";
+  grid-gap: 2.1rem 1rem;
+}
+
+.activities-table,
+.details-window,
+.schedule-day {
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.activities-table {
+  grid-area: t;
+}
+
+.activities-table table {
+  width: 100%;
+}
+
+.activities-table table,
+.activities-table th,
+.activities-table td {
+  border: solid var(--bg-color);
+  border-width: 0px 2px;
+  border-collapse: collapse;
+  padding: 0.5rem 1rem;
+}
+
+.activities-table th {
+  border-width: 0px 2px 2px 2px;
+}
+
+.details-window {
+  grid-area: d;
+}
+
+.weeks-schedule {
+  grid-area: s;
+
+  display: grid;
+  grid-template: 100% / repeat(7, 1fr);
+  grid-gap: 1rem;
+}
+
+.schedule-day {
+  background-size: 100% 400%;
+  background-position: 100% 0%;
+}
+
+/* Credit: https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+.schedule-day:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.schedule-day.has-activites {
+  background-image: radial-gradient(
+    circle,
+    var(--highlight-color) 0%,
+    transparent 60%
+  );
+  animation: 0.2s ease light-up-element forwards;
+}
+
+.day-content {
+  position: absolute;
+}
+
+.day-name {
+  position: absolute;
+  font-size: 1.6rem;
+  transform: translate(-1%, -71%);
+  color: var(--el-color);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.scheduled-activities {
+  /* The last one is zero because we set that padding in scheduled-activity*/
+  /* padding: 1rem 1rem 1rem 0rem; */
+  width: 100%;
+}
+
+.scheduled-activity {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+}
+
+.scheduled-activity:hover {
+  opacity: 0.7;
+}
+
+.short-activity-details {
+  font-weight: lighter;
+  font-style: italic;
+  opacity: 0.8;
+  line-height: 0.7;
+}
+
+.creators {
+  position: absolute;
+  bottom: 3vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  color: var(--el-color);
+  text-align: center;
+  pointer-events: none;
+}
+
+@keyframes light-up-element {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 100% 20%;
+  }
+}
