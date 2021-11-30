@@ -52,57 +52,44 @@
           <td>16:00, Esmaspäev</td>
           <td>5/20</td>
         </tr>
+        <tr class="excess"></tr>
       </table>
       <div class="details-window"></div>
-      <div class="schedule-day has-activites">
-        <div class="day-content">
-          <h2 class="day-name">ESMASPÄEV</h2>
-          <div class="scheduled-activities">
-            <div class="scheduled-activity">
-              <h3 class="activity-name">Korvpall</h3>
-              <p class="short-activity-details">16:00, Koht 1 Tartu</p>
-            </div>
-            <div class="scheduled-activity">
-              <h3 class="activity-name">Sulgpall</h3>
-              <p class="short-activity-details">14:00, Koht 1 Tartu</p>
-            </div>
+      <div class="week">
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
           </div>
         </div>
-      </div>
-      <div class="schedule-day">
-        <div class="day-content">
-          <h2 class="day-name">TEISIPÄEV</h2>
-        </div>
-      </div>
-      <div class="schedule-day">
-        <div class="day-content">
-          <h2 class="day-name">KOLMAPÄEV</h2>
-        </div>
-      </div>
-      <div class="schedule-day">
-        <div class="day-content">
-          <h2 class="day-name">NELJAPÄEV</h2>
-        </div>
-      </div>
-      <div class="schedule-day has-activites">
-        <div class="day-content">
-          <h2 class="day-name">REEDE</h2>
-          <div class="scheduled-activities">
-            <div class="scheduled-activity">
-              <h3 class="activity-name">Korvpall</h3>
-              <p class="short-activity-details">16:00, Koht 1 Tartu</p>
-            </div>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
           </div>
         </div>
-      </div>
-      <div class="schedule-day">
-        <div class="day-content">
-          <h2 class="day-name">LAUPÄEV</h2>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">KOLMAPÄEV</h2>
+          </div>
         </div>
-      </div>
-      <div class="schedule-day">
-        <div class="day-content">
-          <h2 class="day-name">PÜHAPÄEV</h2>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
+          </div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
+          </div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
+          </div>
+        </div>
+        <div class="schedule-day">
+          <div class="day-content">
+            <h2 class="day-name">ESMASPÄEV</h2>
+          </div>
         </div>
       </div>
     </div>
