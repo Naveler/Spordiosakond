@@ -10,5 +10,5 @@ if(!$yhendus){
     die('Ei saa ühendust andmebaasiga');
 }
 else{
-    print_r("db connection success");
+    echo(<h1>db connection</h1>)
 }
