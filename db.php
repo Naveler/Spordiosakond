@@ -7,7 +7,8 @@ $db_salasona = 'qwertyqwertyqwerty';
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 //ühenduse kontroll
 if(!$yhendus){
-    die('Ei saa ühendust andmebaasiga' + mysqli_connect_error());
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
 }
 else{
     echo("<h1>db connection</h1>");
