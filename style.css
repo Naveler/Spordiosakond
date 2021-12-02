@@ -5,6 +5,8 @@
 
   /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
   --highlight-color: rgb(85, 32, 230); /* Highlight gradient color color */
+
+  --faded-color: #aaaaaa;
 }
 
 * {
@@ -25,6 +27,12 @@ body {
 .details-window,
 .schedule-day {
   background-color: var(--el-color);
+}
+
+.activities-table,
+.details-window,
+.schedule-day {
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
 }
 
 /* Navigation bar */
@@ -87,12 +95,6 @@ body {
   grid-gap: 2.1rem 1rem;
 }
 
-.activities-table,
-.details-window,
-.schedule-day {
-  border-radius: 0 0.5rem 0.5rem 0.5rem;
-}
-
 .activities-table {
   grid-area: t;
 }
@@ -139,6 +141,32 @@ body {
   grid-area: d;
 }
 
+.placeholder {
+  /* Placement */
+  grid-area: inherit;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  /* Visuals */
+  border-radius: inherit;
+  border: 4px dashed var(--faded-color);
+  color: var(--faded-color);
+  display: flex;
+
+  /* Text aligning */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  /* Ordering layer */
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
+}
+
 .week {
   grid-area: s;
 
@@ -150,6 +178,7 @@ body {
 .schedule-day {
   background-size: 100% 400%;
   background-position: 100% 0%;
+  width: 100%;
 }
 
 /* Credit: https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
@@ -161,6 +190,10 @@ body {
 
 .day-content {
   position: absolute;
+}
+
+.day-activities {
+  word-wrap: break-word;
 }
 
 .day-name {

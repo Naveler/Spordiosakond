@@ -54,11 +54,15 @@
         </tr>
         <tr class="excess"></tr>
       </table>
-      <div class="details-window"></div>
+      <div class="details-window">
+        <div class="placeholder"><p>Valige mõni trenn, et näha detaile.</p></div>
+        <div class="details"></div>
+      </div>
       <div class="week">
         <div class="schedule-day">
           <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
+            <h2 class="day-name">KOLMAPÄEV</h2>
+            <div class="day-activities"></div>
           </div>
         </div>
         <div class="schedule-day">
