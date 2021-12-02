@@ -4,7 +4,7 @@ define('PROJECT_NAME', 'Spordiosakond');
 // App root dir
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL root
-define('URLROOT', 'http://'.$_SERVER['HTTP_HOST'].'/'.PROJECT_NAME);
+define('URLROOT', 'http://'.$_SERVER['HTTP_HOST'].'/Spordiosakond/'.PROJECT_NAME);
 
 // db params
 define('DB_HOST', 'localhost');
