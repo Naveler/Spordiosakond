@@ -22,7 +22,7 @@
         <h1>GHG</h1>
         <div class="nav-links">
           <a class="nav-link" href="#">Loo konto</a>
-          <a class="nav-link" href=db.php >Logi sisse</a>
+          <a class="nav-link" href=login.php >Logi sisse</a>
         </div>
       </div>
     </nav>

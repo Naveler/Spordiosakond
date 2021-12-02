@@ -12,7 +12,8 @@ function dbConnection(){
         exit();
     }
     else{
-        echo("<a href='login.php'>You are not supposed to be here</a>");
+
     }
+    echo("<a href='login.php'>You are not supposed to be here</a>");
 }
 ?>
