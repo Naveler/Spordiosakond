@@ -1,6 +1,6 @@
 <?php
 // Project name
-define('PROJECT_NAME', 'spordiosakond');
+define('PROJECT_NAME', 'Spordiosakond');
 // App root dir
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL root
