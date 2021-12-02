@@ -69,9 +69,8 @@ body {
 /* Page content */
 .container {
   /* Dimensions */
-  min-width: fit-content;
-
-  min-height: fit-content;
+  width: 1200px;
+  min-height: 55vh;
 
   /* Position */
   position: absolute;
@@ -81,10 +80,8 @@ body {
 
   /* Content display */
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+  grid-template: 3fr 1fr / repeat(7, 1fr);
   grid-template-areas:
-    "t t t t d d d"
-    "t t t t d d d"
     "t t t t d d d"
     "s s s s s s s";
   grid-gap: 2.1rem 1rem;
@@ -107,7 +104,7 @@ body {
 .activities-table,
 .activities-table th,
 .activities-table td {
-  border: solid red;
+  border: solid var(--bg-color);
   border-width: 0px 2px;
   border-collapse: collapse;
   padding: 0.5rem 1rem;
@@ -133,12 +130,16 @@ body {
   height: 2rem;
 }
 
+.excess {
+  height: 100%;
+}
+
 /* Details window */
 .details-window {
   grid-area: d;
 }
 
-.weeks-schedule {
+.week {
   grid-area: s;
 
   display: grid;
@@ -158,52 +159,17 @@ body {
   padding-bottom: 100%;
 }
 
-.schedule-day.has-activites {
-  background-image: radial-gradient(
-    circle,
-    var(--highlight-color) 0%,
-    transparent 60%
-  );
-  animation: 0.2s ease light-up-element forwards;
-}
-
 .day-content {
   position: absolute;
 }
 
 .day-name {
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transform: translate(-1%, -71%);
   color: var(--el-color);
   font-weight: 600;
   pointer-events: none;
-}
-
-.scheduled-activities {
-  /* The last one is zero because we set that padding in scheduled-activity*/
-  /* padding: 1rem 1rem 1rem 0rem; */
-  width: 100%;
-}
-
-.scheduled-activity {
-  cursor: pointer;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 0.15s;
-}
-
-.scheduled-activity:hover {
-  opacity: 0.7;
-}
-
-.short-activity-details {
-  font-weight: lighter;
-  font-style: italic;
-  opacity: 0.8;
-  line-height: 0.7;
 }
 
 .creators {
