@@ -25,11 +25,10 @@ $query = "Select * FROM Kasutaja WHERE Kontakt='$email' AND Parool='$password'";
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-echo '<pre>' . var_export($result, true) . '</pre>';
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-echo '<pre>' . var_export($row, true) . '</pre>';
+echo '<pre>' . var_export($row, true) . '</pre> Tere';
 
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
