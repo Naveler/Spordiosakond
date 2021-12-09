@@ -9,8 +9,7 @@ function dbConnection(){
     $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
     //ühenduse kontroll
     if(!$yhendus){
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        exit();
+        die("Failed to connect with MySQL: ". mysqli_connect_error());
     }
     else{
 
