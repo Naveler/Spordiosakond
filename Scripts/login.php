@@ -28,6 +28,7 @@ $query = "Select * FROM KASUTAJA WHERE Kontakt='$email' AND Parool='$password'";
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
+echo '<pre>' . var_export($yhendus, true) . '</pre> Tere';
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
