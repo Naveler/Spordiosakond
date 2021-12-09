@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <body>
 <form method="POST" action="../Scripts/login.php">
-    <h1>Signin Form</h1>
-    <div class="form-element"> <label>Username</label>
-        <input type="text" name="eesnimi"  required />
-        <input type="text" name="perenimi"  required />
+<link rel="stylesheet" href="CSS/login.css" />
+<div class="container">
+    <h1 class="position">GHG</h1>
+    <div class="position">
+        <input type="text" name="email" placeholder="email"  required />
     </div>
-    <div class="form-element">
-        <label>Password</label>
-        <input type="password" name="parool"  required />
-    </div>
+    <div class="position">
+        <div class="form-element">
+            <input type="password" name="parool" placeholder="password"  required />
+        </div>
     <input type="submit" value="login">
+</div>
 </form>
 </body>

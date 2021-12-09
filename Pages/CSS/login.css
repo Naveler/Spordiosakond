@@ -1,0 +1,38 @@
+:root {
+  --bg-color: rgb(236, 236, 236); /* Background color */
+  --el-color: #242424; /* Element color */
+  --txt-color: rgb(236, 236, 236); /* Text color */
+
+  /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
+  --highlight-color: rgb(85, 32, 230); /* Highlight gradient color color */
+
+  --faded-color: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 40%;
+  min-height: 55vh;
+
+  /* Position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(134, 134, 134);
+  justify-content: space-around;
+}
+
+.position {
+  text-align: center;
+  justify-content: space-between;
+}
+
+:placeholder-shown {
+}
