@@ -10,21 +10,18 @@ $db_salasona = 'qwertyqwertyqwerty';
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 
 //
-$perenimi = $_POST['perenimi'];
-$eesnimi = $_POST['eesnimi'];
+$email = $_POST['email'];
 $password = $_POST['parool'];
 
 // protect against sql injection
-$perenimi = stripcslashes($perenimi);
-$eesnimi = stripcslashes($eesnimi);
+$email = stripcslashes($email);
 $password = stripcslashes($password);
 
-$perenimi = mysqli_escape_string($yhendus, $perenimi);
-$eesnimi = mysqli_escape_string($yhendus, $eesnimi);
+$email = mysqli_escape_string($yhendus, $email);
 $password = mysqli_escape_string($yhendus, $password);
 
 // query that will be sent to mysql
-$query = "Select * FROM Kasutaja WHERE eesnimi='$eesnimi' AND perenimi='$perenimi' AND Parool='$password'";
+$query = "Select * FROM Kasutaja WHERE Kontakt='$email' AND Parool='$password'";
 var_dump($query);
 
 // sends query to db

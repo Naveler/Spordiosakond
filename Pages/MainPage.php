@@ -14,18 +14,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,500&display=swap"
       rel="stylesheet"
           />
+      <nav class="navbar">
+          <div class="nav-content">
+              <h1>GHG</h1>
+              <div class="nav-links">
+                  <a class="nav-link" href="#">Loo konto</a>
+                  <a class="nav-link" href="LoginPage.php" >Logi sisse</a>
+              </div>
+          </div>
+      </nav>
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-content flex">
-        <h1>GHG</h1>
-        <div class="nav-links flex">
-          <a class="nav-link" href="#">Loo konto</a>
-          <a class="nav-link" href="LoginPage.php" >Logi sisse</a>
-        </div>
-      </div>
-    </nav>
     <div class="container">
       <table class="activities-table">
         <tr>
