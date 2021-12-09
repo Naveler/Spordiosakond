@@ -26,6 +26,7 @@ echo '<pre>' . var_export($query, true) . '</pre> Tere';
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
+echo '<pre>' . var_export($result, true) . '</pre> Tere';
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
