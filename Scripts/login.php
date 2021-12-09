@@ -12,7 +12,7 @@ if(!$yhendus){
     exit();
 }
 else{
-    echo '<script>alert("You little sheeky fuckbag")</script>';
+    echo '<script>alert("You little sheeky fuckbag no db connection")</script>';
 }
 
 //
