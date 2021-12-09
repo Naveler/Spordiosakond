@@ -22,6 +22,7 @@ $password = mysqli_escape_string($yhendus, $password);
 
 // query that will be sent to mysql
 $query = "Select * FROM Kasutaja WHERE Kontakt='$email' AND Parool='$password'";
+echo '<pre>' . var_export($query, true) . '</pre> Tere';
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
