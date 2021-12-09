@@ -18,9 +18,9 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="nav-content">
+      <div class="nav-content flex">
         <h1>GHG</h1>
-        <div class="nav-links">
+        <div class="nav-links flex">
           <a class="nav-link" href="#">Loo konto</a>
           <a class="nav-link" href="LoginPage.php" >Logi sisse</a>
         </div>
@@ -34,36 +34,73 @@
           <th>Millal</th>
           <th>Osalejate arv</th>
         </tr>
-        <tr>
+        <tr class="clickable">
           <td>Backflipping</td>
           <td>Asd1, Asdasd</td>
           <td>16:00, Esmaspäev</td>
           <td>5/20</td>
         </tr>
-        <tr>
+        <tr class="clickable">
           <td>Backflipping</td>
           <td>Asd1, Asdasd</td>
           <td>16:00, Esmaspäev</td>
           <td>5/20</td>
         </tr>
-        <tr>
+        <tr class="clickable">
           <td>Backflipping</td>
           <td>Asd1, Asdasd</td>
           <td>16:00, Esmaspäev</td>
           <td>5/20</td>
         </tr>
-        <tr class="excess"></tr>
+        <tr class="excess">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </table>
-      <div class="details-window">
-        <div class="placeholder"><p>Valige mõni trenn, et näha detaile.</p></div>
-        <div class="details"></div>
+      <div class="placeholder flex"><p>Valige mõni trenn, et näha detaile.</p></div>
+      <div class="details-window hidden">
+        <div class="details-window-content flex">
+          <h2 class="activity-name">Backflipping</h2>
+          <div class="details">
+            <p>
+              <strong>Treenija:</strong>
+              Asd McAsd
+            </p>
+            <p>
+              <strong>Kestvus:</strong>
+              16:00 - 17:30
+            </p>
+            <p>
+              <strong>Asukoht:</strong>
+              Asd 1, Asdasd I korrus A101
+            </p>
+            <p>
+              <strong>Toimub:</strong>
+              Esmaspäeval (29.11.2021)
+            </p>
+          </div>
+          <button class="btn-submit">Osalen</button>
+        </div>
       </div>
       <div class="week">
         <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">KOLMAPÄEV</h2>
-            <div class="day-activities"></div>
-          </div>
+          <h2 class="day-name">KOLMAPÄEV</h2>
+          <ul class="day">
+            <li class="activity clickable">
+              <span class="name">Backflipping</span>
+              <span class="time">16:00</span>
+            </li>
+            <li class="activity clickable">
+              <span class="name">Backflipping</span>
+              <span class="time">16:00</span>
+            </li>
+            <li class="activity clickable">
+              <span class="name">Backflipping</span>
+              <span class="time">16:00</span>
+            </li>
+            </ul>
         </div>
         <div class="schedule-day">
           <div class="day-content">
@@ -102,5 +139,6 @@
       Christo Vahtramäe, Sander Paasalu, Georg Vilja<br />
       ITA19
       </small>
+      <script src="../JS/main.js"></script>
   </body>
 </html>
