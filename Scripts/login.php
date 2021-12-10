@@ -36,11 +36,11 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 if($count === 1){
     echo '<script>alert("successful login")</script>';
-    header("Location: http://tiim1ita19.ikt.khk.ee/Spordiosakond");
+    header("Location: ../Pages/MainPage");
     exit();
 }
 else {
     echo '<script>alert("You little sheeky fuckbag"))</script>';
-     header("Location: http://tiim1ita19.ikt.khk.ee/Spordiosakond/Pages/LoginPage.php");
+     header("Location: ../Pages/LoginPage);
      exit();
 }
