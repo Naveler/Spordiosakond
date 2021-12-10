@@ -7,8 +7,9 @@ $db_salasona = 'qwertyqwertyqwerty';
 // ühendus andmebaasiga
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 
-if($yhendus->connect_error){
-    die("Failed to connect with MySQL: ". $yhendus->connect_error);
+if($yhendus==false){
+    die("Failed to connect with MySQL: ". mysqli_connect_errno());
+    echo '<script>alert("No db connection")</script>';
 }
 var_dump($yhendus->connect_error);
 //
