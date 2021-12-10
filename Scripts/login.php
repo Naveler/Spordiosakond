@@ -41,6 +41,6 @@ if($count === 1){
 }
 else {
     echo '<script>alert("You little sheeky fuckbag"))</script>';
-     header("Location: ../Pages/LoginPage);
+     header("Location: ../Pages/LoginPage");
      exit();
 }
