@@ -25,24 +25,20 @@ $password = mysqli_escape_string($yhendus, $password);
 
 // query that will be sent to mysql
 $query = "Select * FROM KASUTAJA WHERE Kontakt='$email' AND Parool='$password'";
-var_dump($query);
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-echo '<pre>hello there</pre>';
-var_dump($result);
-echo '<pre>' . var_export($yhendus, true) . '</pre> Tere1';
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-var_dump($row);
-echo '<pre>' . var_export($row, true) . '</pre> Tere2';
 
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
 if($count === 1){
     echo '<script>alert("successful login")</script>';
+    header('http://tiim1ita19.ikt.khk.ee/Spordiosakond');
 }
 else {
     echo '<script>alert("You little sheeky fuckbag")</script>';
+     header('http://tiim1ita19.ikt.khk.ee/Spordiosakond/Pages/LoginPage.php');
 }
