@@ -35,12 +35,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
 if($count === 1){
-   // echo '<script>alert("successful login")</script>';
-    header("Location: ../Pages/MainPage");
+    header("Location: ../Pages/MainPage.php");
     exit();
 }
 else {
-   // echo '<script>alert("You little sheeky fuckbag"))</script>';
-     header("Location: ../Pages/LoginPage");
+     header("Location: ../Pages/LoginPage.php");
      exit();
 }
