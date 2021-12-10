@@ -11,7 +11,7 @@ if($yhendus==false){
     die("Failed to connect with MySQL: ". mysqli_connect_errno());
     echo '<script>alert("No db connection")</script>';
 }
-var_dump($yhendus->connect_error);
+echo 'got db connection';
 //
 $email = $_POST['email'];
 $password = $_POST['parool'];
@@ -29,6 +29,7 @@ var_dump($query);
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
+echo '<pre>hello there</pre>';
 var_dump($result);
 echo '<pre>' . var_export($yhendus, true) . '</pre> Tere1';
 
