@@ -7,11 +7,8 @@ $db_salasona = 'qwertyqwertyqwerty';
 // ühendus andmebaasiga
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 
-if(mysqli_connect_errno()){
-    die("Failed to connect with MySQL: ". mysqli_connect_error());
-}
-else{
-    echo '<script>alert("You little sheeky fuckbag no db connection")</script>';
+if($yhendus->connect_error){
+    die("Failed to connect with MySQL: ". $yhendus->connect_error);
 }
 
 //
@@ -27,7 +24,7 @@ $password = mysqli_escape_string($yhendus, $password);
 
 // query that will be sent to mysql
 $query = "Select * FROM Kasutaja WHERE Kontakt='$email' AND Parool='$password'";
-echo '<pre>' . var_export($query, true) . '</pre> Tere';
+var_dump($query);
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
