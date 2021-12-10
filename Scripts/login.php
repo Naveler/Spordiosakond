@@ -10,7 +10,7 @@ $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas)
 if($yhendus->connect_error){
     die("Failed to connect with MySQL: ". $yhendus->connect_error);
 }
-
+var_dump($yhendus->connect_error);
 //
 $email = $_POST['email'];
 $password = $_POST['parool'];
@@ -28,11 +28,13 @@ var_dump($query);
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-echo '<pre>' . var_export($yhendus, true) . '</pre> Tere';
+var_dump($result);
+echo '<pre>' . var_export($yhendus, true) . '</pre> Tere1';
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-echo '<pre>' . var_export($row, true) . '</pre> Tere';
+var_dump($row);
+echo '<pre>' . var_export($row, true) . '</pre> Tere2';
 
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
