@@ -11,7 +11,7 @@ if($yhendus==false){
     die("Failed to connect with MySQL: ". mysqli_connect_errno());
     echo '<script>alert("No db connection")</script>';
 }
-echo 'got db connection';
+
 //
 $email = $_POST['email'];
 $password = $_POST['parool'];
@@ -35,14 +35,12 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
 if($count === 1){
-    echo '<script>alert("successful login");
-    window.location.href("http://tiim1ita19.ikt.khk.ee/Spordiosakond");
-</script>';
-
+    echo '<script>alert("successful login")</script>';
+    header("http://tiim1ita19.ikt.khk.ee/Spordiosakond");
+    exit();
 }
 else {
-    echo '<script>alert("You little sheeky fuckbag";
-    window.location.href("http://tiim1ita19.ikt.khk.ee/Spordiosakond/Pages/LoginPage.php");
-)</script>';
-     
+    echo '<script>alert("You little sheeky fuckbag"))</script>';
+     header("http://tiim1ita19.ikt.khk.ee/Spordiosakond/Pages/LoginPage.php");
+     exit();
 }
