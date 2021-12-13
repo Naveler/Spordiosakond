@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=League+Script&family=Meow+Script&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./CSS/variables.css">
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Document</title>
   </head>
