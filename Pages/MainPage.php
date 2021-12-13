@@ -1,3 +1,7 @@
+<?php
+require "../Scripts/session.php";
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,8 +23,16 @@
       <div class="nav-content flex">
         <h1>VOCO</h1>
         <ul class="nav-links flex">
-          <li class="nav-link"><a href="#">Logi sisse</a></li>
-          <li class="nav-link"><a href="#">Loo konto</a></li>
+            <?php
+            if($_SESSION['status']=='false' ){
+                echo(
+          '<li class="nav-link"><a href="#">Logi sisse</a></li>
+          <li class="nav-link"><a href=LoginPage.php>Loo konto</a></li>');
+            }else{
+                echo('<li class="nav-link"><a href="#">Logi valja</a></li>');
+            }
+
+          ?>
         </ul>
       </div>
     </nav>
