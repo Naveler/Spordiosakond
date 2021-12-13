@@ -6,6 +6,10 @@
   --1c: #d12c63;
   --2c: #ec673e;
 
+  --shadow-color: #bbbbbb;
+  --box-shadow: 0 0 6px var(--shadow-color);
+  --border: 2px solid #d3d3d3;
+
   /* Settings */
   --grid-gap: 1.2rem;
   --border-radius: 1rem;
@@ -39,7 +43,7 @@ body {
   background-color: var(--el-color);
   color: var(--txt-color);
 
-  box-shadow: 0 0 8px #b1b1b1;
+  box-shadow: var(--box-shadow);
 }
 
 .nav-content {
@@ -83,7 +87,7 @@ body {
   border-radius: var(--border-radius);
   color: var(--txt-color);
 
-  border: 2px solid lightgray;
+  border: var(--border);
   /* margin: 0.5rem; */
 
   /* Fade */
@@ -101,7 +105,7 @@ body {
   height: 100%;
 
   border-radius: inherit;
-  box-shadow: 0 0 6px #bbbbbb;
+  box-shadow: var(--box-shadow);
   padding: 0.5rem;
   z-index: -1;
 }
