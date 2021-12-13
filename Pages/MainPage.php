@@ -2,143 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Trennid</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=League+Script&family=Meow+Script&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
-          />
-      <nav class="navbar">
-          <div class="nav-content">
-              <h1>GHG</h1>
-              <div class="nav-links">
-                  <a class="nav-link" href="#">Loo konto</a>
-                  <a class="nav-link" href="LoginPage.php" >Logi sisse</a>
-              </div>
-          </div>
-      </nav>
-    <link rel="stylesheet" href="CSS/style.css" />
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <table class="activities-table">
-        <tr>
-          <th>Trenn</th>
-          <th>Kus</th>
-          <th>Millal</th>
-          <th>Osalejate arv</th>
-        </tr>
-        <tr class="clickable">
-          <td>Backflipping</td>
-          <td>Asd1, Asdasd</td>
-          <td>16:00, Esmaspäev</td>
-          <td>5/20</td>
-        </tr>
-        <tr class="clickable">
-          <td>Backflipping</td>
-          <td>Asd1, Asdasd</td>
-          <td>16:00, Esmaspäev</td>
-          <td>5/20</td>
-        </tr>
-        <tr class="clickable">
-          <td>Backflipping</td>
-          <td>Asd1, Asdasd</td>
-          <td>16:00, Esmaspäev</td>
-          <td>5/20</td>
-        </tr>
-        <tr class="excess">
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-      <div class="placeholder flex"><p>Valige mõni trenn, et näha detaile.</p></div>
-      <div class="details-window hidden">
-        <div class="details-window-content flex">
-          <h2 class="activity-name">Backflipping</h2>
-          <div class="details">
-            <p>
-              <strong>Treenija:</strong>
-              Asd McAsd
-            </p>
-            <p>
-              <strong>Kestvus:</strong>
-              16:00 - 17:30
-            </p>
-            <p>
-              <strong>Asukoht:</strong>
-              Asd 1, Asdasd I korrus A101
-            </p>
-            <p>
-              <strong>Toimub:</strong>
-              Esmaspäeval (29.11.2021)
-            </p>
-          </div>
-          <button class="btn-submit">Osalen</button>
-        </div>
+    <nav class="navbar">
+      <div class="nav-content flex">
+        <h1>VOCO</h1>
+        <ul class="nav-links flex">
+          <li class="nav-link"><a href="#">Logi sisse</a></li>
+          <li class="nav-link"><a href="#">Loo konto</a></li>
+        </ul>
       </div>
-      <div class="week">
-        <div class="schedule-day">
-          <h2 class="day-name">KOLMAPÄEV</h2>
-          <ul class="day">
-            <li class="activity clickable">
-              <span class="name">Backflipping</span>
-              <span class="time">16:00</span>
+    </nav>
+    <div class="container flex">
+      <div class="activities-view grid">
+        <div class="activities element"></div>
+        <div class="details element"></div>
+      </div>
+      <div class="week grid">
+        <div class="day element clickable flex has-activities">E</div>
+        <div class="day element clickable flex has-activities">T</div>
+        <div class="day element clickable flex">K</div>
+        <div class="day element clickable flex">N</div>
+        <div class="day element clickable flex current-day has-activities">
+          R
+        </div>
+        <div class="day element clickable flex">L</div>
+        <div class="day element clickable flex">P</div>
+      </div>
+      <div class="quick-summary">
+        <div class="today element">
+          <h3>Täna</h3>
+          <ul>
+            <li>
+              <h4>Backflipping</h4>
+              <p>16:00</p>
             </li>
-            <li class="activity clickable">
-              <span class="name">Backflipping</span>
-              <span class="time">16:00</span>
+            <li>
+              <h4>Backflipping</h4>
+              <p>16:00</p>
             </li>
-            <li class="activity clickable">
-              <span class="name">Backflipping</span>
-              <span class="time">16:00</span>
+            <li>
+              <h4>Backflipping</h4>
+              <p>16:00</p>
             </li>
-            </ul>
+          </ul>
         </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">KOLMAPÄEV</h2>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-content">
-            <h2 class="day-name">ESMASPÄEV</h2>
-          </div>
+        <div class="tomorrow element">
+          <h3>Homme</h3>
+          <ul>
+            <li>
+              <h4>Backflipping</h4>
+              <p>16:00</p>
+            </li>
+            <li>
+              <h4>Backflipping</h4>
+              <p>16:00</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <small class="creators">
-      <strong>Made by</strong><br />
-      Christo Vahtramäe, Sander Paasalu, Georg Vilja<br />
-      ITA19
-      </small>
-      <script src="../JS/main.js"></script>
   </body>
 </html>

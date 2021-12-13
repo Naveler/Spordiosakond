@@ -1,22 +1,14 @@
-/* Table of contents */
-/* 
-  1. Content
-  2. Activities table
-  3. Details window
-  4. Week's schedule
-  5. Footer
-  6. Animations
-*/
-
 :root {
-  --bg-color: rgb(236, 236, 236); /* Background color */
-  --el-color: #242424; /* Element color */
-  --txt-color: rgb(236, 236, 236); /* Text color */
-  --faded-color: #aaaaaa;
-  --border-radius: 0 0.5rem 0.5rem 0.5rem;
+  /* Colors */
+  --el-color: #e9e9e9;
+  --bg-color: #e9e9e9;
+  --txt-color: #131313;
+  --1c: #d12c63;
+  --2c: #ec673e;
 
-  /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
-  --highlight-color: rgb(85, 32, 230);
+  /* Settings */
+  --grid-gap: 1.2rem;
+  --border-radius: 1rem;
 }
 
 * {
@@ -28,262 +20,192 @@
 
 body {
   background-color: var(--bg-color);
-  color: var(--txt-color);
 }
 
 .flex {
   display: flex;
 }
 
-.btn-submit,
-.clickable {
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.1s;
+.grid {
+  display: grid;
 }
-
-.btn-submit:hover,
-.clickable:hover {
-  opacity: 0.7;
-}
-
-.btn-submit:active,
-.clickable:active {
-  opacity: 0.5;
-}
-
-/* Widely shared attributes */
-.navbar,
-.activities-table,
-.details-window,
-.schedule-day {
-  background-color: var(--el-color);
-}
-
-.activities-table,
-.details-window,
-.schedule-day {
-  border-radius: var(--border-radius);
-}
-
-/* -------------- */
-/* Navigation bar */
-/* -------------- */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
+
+  background-color: var(--el-color);
+  color: var(--txt-color);
+
+  box-shadow: 0 0 8px #b1b1b1;
 }
 
 .nav-content {
-  width: 85%;
-  padding: 1rem 0;
-  margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
 }
 
-/* Aligns nav links to the center vertically */
 .nav-links {
+  list-style: none;
+  height: fit-content;
   flex-direction: row;
-  align-items: center;
   gap: 1rem;
 }
 
-.nav-link {
-  color: white;
+.nav-link a {
   text-decoration: none;
-  text-align: center;
-  opacity: 0.6;
-  transition-property: opacity;
-  transition-duration: 0.1s;
+  color: var(--txt-color);
 }
 
-.nav-link:hover {
-  opacity: 1;
-}
-
-/* ------------ */
-/* Page content */
-/* ------------ */
-
-/* Page content */
 .container {
-  /* Dimensions */
-  width: 1200px;
-  height: 55vh;
+  width: min(1300px, 100vw);
+  height: fit-content;
 
-  /* Position */
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+
+  /* border: 2px dashed pink; */
+  padding: 1rem;
+
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+
+.element {
+  position: relative;
+
+  background-color: var(--el-color);
+  border-radius: var(--border-radius);
+  color: var(--txt-color);
+
+  border: 2px solid lightgray;
+  /* margin: 0.5rem; */
+
+  /* Fade */
+  transition: background-color 0.5s;
+}
+
+.element::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* Content display */
-  display: grid;
-  grid-template: 3fr 1fr / repeat(7, 1fr);
-  grid-template-areas:
-    "t t t t d d d"
-    "s s s s s s s";
-  grid-gap: 2.1rem 1rem;
-}
-
-/* --------------- */
-/* Acivities table */
-/* --------------- */
-
-/* TODO: Fix the border covering the edges, making the table appear smaller and edges look sharper */
-.activities-table {
-  grid-area: t;
-  border-radius: var(--border-radius);
-}
-
-.activities-table table {
-  width: 100%;
-  border-radius: var(--border-radius);
-}
-
-.activities-table,
-.activities-table * {
-  border: solid var(--bg-color);
-  border-width: 2px;
-  border-collapse: collapse;
-  padding: 0.5rem 1rem;
-}
-
-.excess {
-  height: 100%;
-}
-
-/* -------------- */
-/* Details window */
-/* -------------- */
-
-.details-window {
-  grid-area: d;
-}
-
-.placeholder {
-  /* Placement */
-  grid-area: d;
   width: 100%;
   height: 100%;
-  position: absolute;
 
-  /* Visuals */
-  border-radius: var(--border-radius);
-  border: 4px dashed var(--faded-color);
-  color: var(--faded-color);
-
-  /* Text aligning */
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-
-  /* Ordering layer */
+  border-radius: inherit;
+  box-shadow: 0 0 6px #bbbbbb;
+  padding: 0.5rem;
   z-index: -1;
 }
 
-.hidden {
-  display: none;
+.element.clickable {
+  cursor: pointer;
 }
 
-.details-window-content {
-  height: 100%;
+.element.clickable::before {
+  background-size: 200% 200%;
+  background-position: 100% 0%;
+  background-image: linear-gradient(
+    45deg,
+    var(--1c) 0%,
+    var(--2c) 50%,
+    transparent 50%
+  );
+  transition: background-position 0.2s, opacity 0.1s;
+}
+
+.element.clickable:hover::before,
+.element.clickable.current-day::before {
+  background-position: 0% 100%;
+}
+
+.element.clickable:active::before {
+  opacity: 0.5;
+}
+
+.activities-view {
   width: 100%;
-
-  padding: 2rem;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  gap: 3rem;
+  height: 40vh;
+  grid-template: 1fr / repeat(7, 1fr);
+  gap: inherit;
 }
 
-.btn-submit {
-  height: 3rem;
-  background-color: var(--bg-color);
-  border: 0;
-  border-radius: 10rem;
-  font-weight: bold;
-  font-size: 1rem;
+.activities {
+  height: 100%;
+  grid-area: span 1 / span 4;
 }
 
-/* --------------- */
-/* Week's schedule */
-/* --------------- */
+.details {
+  grid-area: span 1 / span 3;
+  height: 100%;
+  z-index: 10;
+}
 
 .week {
-  grid-area: s;
-
-  display: grid;
-  grid-template: 100% / repeat(7, 1fr);
-  grid-gap: 1rem;
-}
-
-.schedule-day {
   width: 100%;
-}
 
-/* Credit: https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
-.schedule-day:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-.day-name {
-  position: absolute;
-  font-size: 1.4rem;
-  transform: translate(-1%, -71%);
-  color: var(--el-color);
-  font-weight: 600;
-  pointer-events: none;
+  grid-template: 1fr / repeat(7, 1fr);
+  gap: inherit;
 }
 
 .day {
-  width: inherit;
-  position: absolute;
-  padding: 0.3rem;
-  list-style: none;
-  border: 1px dashed yellow;
-}
+  grid-area: span 1;
+  aspect-ratio: 1;
 
-.activity {
-  /* padding: 0.3rem 0; */
-}
-
-.activity span {
-  display: inline-block;
-}
-
-.activity .name {
+  font-size: 2rem;
   font-weight: bold;
-  max-width: 60%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: 1px dashed red;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #a3a3a3;
 }
 
-.activity .time {
-  font-style: italic;
-  color: var(--faded-color);
-  border: 1px dashed green;
+.has-activities {
+  color: var(--txt-color);
 }
 
-/* ------ */
-/* Footer */
-/* ------ */
-
-.creators {
-  position: absolute;
-  bottom: 3vh;
-  left: 50vw;
-  transform: translateX(-50%);
-  color: var(--el-color);
-  text-align: center;
-  pointer-events: none;
+.quick-summary {
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+  gap: inherit;
 }
 
-/* ---------- */
-/* Animations */
-/* ---------- */
+.today,
+.tomorrow {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.today li,
+.tomorrow li {
+  list-style: none;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-content {
+    padding: 1rem 2rem;
+  }
+
+  .activities-view {
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-template-areas: "m m m m";
+  }
+
+  .activities,
+  .details {
+    grid-area: m;
+  }
+
+  .details {
+    display: none;
+  }
+}
