@@ -51,6 +51,14 @@ h4 {
   width: 30%;
 }
 
+.textField {
+  border: 0;
+}
+
+input:placeholder-shown {
+  border: 0;
+}
+
 .button {
   border-radius: 20px;
   margin-top: 10%;
