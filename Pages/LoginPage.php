@@ -5,13 +5,16 @@
 <div class="container">
     <h1 class="position">GHG</h1>
     <div class="position">
-        <input type="text" name="email" placeholder="email"  required />
-    </div>
+        <div class="form-element">
+            <input type="text" name="email" placeholder="email"  required />
+        </div>
     <div class="position">
         <div class="form-element">
             <input type="password" name="parool" placeholder="password"  required />
         </div>
-    <input type="submit" value="login">
+    </div>
+    <input class="button" type="submit" value="Logi sisse">
+    <h4>Pole kontot? loo konto</h4>
 </div>
 </form>
 </body>
