@@ -1,68 +1,79 @@
-:root {
-  --bg-color: rgb(236, 236, 236); /* Background color */
-  --el-color: #242424; /* Element color */
-  --txt-color: rgb(236, 236, 236); /* Text color */
-
-  /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
-  --highlight-color: rgb(85, 32, 230); /* Highlight gradient color color */
-
-  --faded-color: #aaaaaa;
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border: var(--border);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
-  margin-bottom: 10%;
-}
-
-h4 {
-  margin-top: 3%;
-  font-size: 10px;
-}
-
-.container {
-  width: 40%;
-  min-height: 55vh;
-  border-radius: 5px;
+form {
+  height: 520px;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
-  /* Position */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(134, 134, 134);
 }
-
-.position {
+form * {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
   text-align: center;
-  margin-top: 3%;
 }
 
-.something {
-  width: 30%;
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+input {
+  display: block;
+  height: 50px;
+  width: 90%;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #e5e5e5;
+}
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.textField {
-  border: 0;
-}
-
-input:placeholder-shown {
-  border: 0;
-}
-
-.button {
-  border-radius: 20px;
-  margin-top: 10%;
-  height: 30px;
-  width: 40%;
-  border: 0;
+.social div {
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  text-align: center;
 }
