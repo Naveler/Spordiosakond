@@ -17,7 +17,6 @@ form {
   top: 50%;
   left: 50%;
   border-radius: 10px;
-  backdrop-filter: blur(10px);
   border: 2px solid #d3d3d3;
   padding: 50px 35px;
   display: flex;
@@ -26,8 +25,8 @@ form {
   align-content: center;
   background-color: var(--bg-color);
 }
+
 form * {
-  font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -43,6 +42,7 @@ input {
   font-weight: 300;
   margin: auto;
 }
+
 button {
   margin-top: 15%;
   width: 100%;

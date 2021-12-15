@@ -1,6 +1,6 @@
 <nav class="navbar">
     <div class="nav-content flex">
-        <h1>VOCO</h1>
+    <a href="main.php" class="nav-title"><h1>VOCO</h1></a>
         <ul class="nav-links flex">
             <?php
             if ($_SESSION['status']){

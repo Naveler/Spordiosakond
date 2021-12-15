@@ -19,6 +19,17 @@
   padding: 1rem 5rem;
 }
 
+@media screen and (max-width: 850px) {
+  .nav-content {
+    padding: 1rem 2rem;
+  }
+}
+
+.nav-title {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
 .nav-links {
   list-style: none;
   height: fit-content;
