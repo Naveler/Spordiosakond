@@ -2,7 +2,7 @@
 class Session {
     function createSession(){
         session_start();
-        $_SESSION["status"]='active';
+        $_SESSION["status"]=true;
     }
     function endSession(){
         session_destroy();

@@ -1,6 +1,7 @@
 <?php
     require "../Scripts/session.php";
-    // session_start();
+    $session = new Session;
+    $session->createSession();
 ?>
 
 <!DOCTYPE html>
@@ -33,9 +34,7 @@
         <div class="day element clickable flex has-activities">T</div>
         <div class="day element clickable flex">K</div>
         <div class="day element clickable flex">N</div>
-        <div class="day element clickable flex current-day has-activities">
-          R
-        </div>
+        <div class="day element clickable flex current-day has-activities">R</div>
         <div class="day element clickable flex">L</div>
         <div class="day element clickable flex">P</div>
       </div>
