@@ -9,7 +9,7 @@
                         <a href="login.php">Logi sisse</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Loo konto</a>
+                        <a href="register.php">Loo konto</a>
                     </li>'
                 );
             } else {
