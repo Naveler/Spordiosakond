@@ -6,10 +6,10 @@
             if ($_SESSION['status']){
                 echo(
                     '<li class="nav-link">
-                        <a href="#">Logi sisse</a>
+                        <a href="login.php">Logi sisse</a>
                     </li>
                     <li class="nav-link">
-                        <a href=LoginPage.php>Loo konto</a>
+                        <a href="#">Loo konto</a>
                     </li>'
                 );
             } else {
