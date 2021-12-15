@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/variables.css">
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css">
     <title>Document</title>
   </head>
   <body>
@@ -21,7 +22,9 @@
     <div class="container flex">
       <div class="activities-view grid">
         <div class="activities element"></div>
-        <div class="details element"></div>
+        <div class="details element">
+
+        </div>
       </div>
       <div class="week grid">
         <div class="day element clickable flex has-activities">
