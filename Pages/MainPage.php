@@ -1,7 +1,8 @@
 <?php
-require "../Scripts/session.php";
-session_start();
+    require "../Scripts/session.php";
+    // session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,23 +20,9 @@ session_start();
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-content flex">
-        <h1>VOCO</h1>
-        <ul class="nav-links flex">
-            <?php
-            if($_SESSION['status']=='false' ){
-                echo(
-          '<li class="nav-link"><a href="#">Logi sisse</a></li>
-          <li class="nav-link"><a href=LoginPage.php>Loo konto</a></li>');
-            }else{
-                echo('<li class="nav-link"><a href="#">Logi valja</a></li>');
-            }
-
-          ?>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <?php require_once("./components/header.php") ?>
+    </header>
     <div class="container flex">
       <div class="activities-view grid">
         <div class="activities element"></div>
