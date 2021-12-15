@@ -30,13 +30,13 @@
         <div class="details element"></div>
       </div>
       <div class="week grid">
-        <div class="day element clickable flex has-activities">E</div>
-        <div class="day element clickable flex has-activities">T</div>
-        <div class="day element clickable flex">K</div>
-        <div class="day element clickable flex">N</div>
-        <div class="day element clickable flex current-day has-activities">R</div>
-        <div class="day element clickable flex">L</div>
-        <div class="day element clickable flex">P</div>
+        <div class="day element clickable flex has-activities"><span>Esmaspäev</span></div>
+        <div class="day element clickable flex has-activities"><span>Teisipäev</span></div>
+        <div class="day element clickable flex"><span>Kolmapäev</span></div>
+        <div class="day element clickable flex"><span>Neljapäev</span></div>
+        <div class="day element clickable flex current-day has-activities"><span>Reede</span></div>
+        <div class="day element clickable flex"><span>Laupäev</span></div>
+        <div class="day element clickable flex"><span>Pühapäeva</span></div>
       </div>
       <div class="quick-summary">
         <div class="today element">

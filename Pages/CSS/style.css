@@ -71,7 +71,6 @@ body {
   color: var(--txt-color);
 
   border: var(--border);
-  /* margin: 0.5rem; */
 
   /* Fade */
   transition: background-color 0.5s;
@@ -147,9 +146,6 @@ body {
   grid-area: span 1;
   aspect-ratio: 1;
 
-  font-size: 2rem;
-  font-weight: bold;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -158,6 +154,16 @@ body {
 
 .has-activities {
   color: var(--txt-color);
+}
+
+.day > span {
+  --font-size: 1.2rem;
+  font-size: var(--font-size);
+  font-weight: bold;
+}
+
+.day > span::first-letter {
+  font-size: var(--font-size);
 }
 
 .quick-summary {
@@ -175,6 +181,16 @@ body {
 .today li,
 .tomorrow li {
   list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .day > span {
+    font-size: 0rem;
+  }
+
+  .day > span::first-letter {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
