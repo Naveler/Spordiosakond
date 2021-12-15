@@ -30,13 +30,34 @@
         <div class="details element"></div>
       </div>
       <div class="week grid">
-        <div class="day element clickable flex has-activities"><span>Esmaspäev</span></div>
-        <div class="day element clickable flex has-activities"><span>Teisipäev</span></div>
-        <div class="day element clickable flex"><span>Kolmapäev</span></div>
-        <div class="day element clickable flex"><span>Neljapäev</span></div>
-        <div class="day element clickable flex current-day has-activities"><span>Reede</span></div>
-        <div class="day element clickable flex"><span>Laupäev</span></div>
-        <div class="day element clickable flex"><span>Pühapäeva</span></div>
+        <div class="day element clickable flex has-activities">
+          <span class="day-name">Esmaspäev</span>
+          <span class="activity-amount">10</span>
+        </div>
+        <div class="day element clickable flex has-activities">
+          <span class="day-name">Teisipäev</span>
+          <span class="activity-amount">7</span>
+        </div>
+        <div class="day element clickable flex">
+          <span class="day-name">Kolmapäev</span>
+          <span class="activity-amount">0</span>
+        </div>
+        <div class="day element clickable flex">
+          <span class="day-name">Neljapäev</span>
+          <span class="activity-amount">0</span>
+        </div>
+        <div class="day element clickable flex current-day has-activities">
+          <span class="day-name">Reede</span>
+          <span class="activity-amount">2</span>
+        </div>
+        <div class="day element clickable flex">
+          <span class="day-name">Laupäev</span>
+          <span class="activity-amount">0</span>
+        </div>
+        <div class="day element clickable flex">
+          <span class="day-name">Pühapäeva</span>
+          <span class="activity-amount">0</span>
+        </div>
       </div>
       <div class="quick-summary">
         <div class="today element">

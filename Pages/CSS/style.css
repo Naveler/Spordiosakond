@@ -44,8 +44,27 @@ body {
 }
 
 .nav-link a {
+  position: relative;
   text-decoration: none;
   color: var(--txt-color);
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 0.2rem;
+  width: 0;
+
+  background-image: linear-gradient(45deg, var(--1c) 0%, var(--2c) 100%);
+  margin: 1.5rem auto 0 auto;
+  border-radius: 10rem;
+
+  transition: width 0.1s;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
 }
 
 .container {
@@ -56,7 +75,6 @@ body {
   inset: 50%;
   transform: translate(-50%, -50%);
 
-  /* border: 2px dashed pink; */
   padding: 1rem;
 
   flex-direction: column;
@@ -156,13 +174,13 @@ body {
   color: var(--txt-color);
 }
 
-.day > span {
+.day > .day-name {
   --font-size: 1.2rem;
   font-size: var(--font-size);
   font-weight: bold;
 }
 
-.day > span::first-letter {
+.day > .day-name::first-letter {
   font-size: var(--font-size);
 }
 
@@ -184,11 +202,11 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .day > span {
+  .day > .day-name {
     font-size: 0rem;
   }
 
-  .day > span::first-letter {
+  .day > .day-name::first-letter {
     font-size: 2rem;
   }
 }
