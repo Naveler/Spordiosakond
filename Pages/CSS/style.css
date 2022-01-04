@@ -83,22 +83,28 @@
   height: 100%;
 }
 
-.activities table th {
-  border-bottom: 1px;
-}
-
 .activities table td,
 .activities table th {
-  border: 0 solid var(--shadow-color);
-  border-right-width: 1px;
-  padding: 0.1rem 0.3rem;
+  border: var(--border-width) solid var(--shadow-color);
+  padding: 0.2rem 0.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .activities table td:last-of-type,
 .activities table th:last-of-type {
-  border: 0;
+  border-right-width: 0;
+}
+
+.activities table th {
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.activities table td {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
 }
 
 .activities .excess {

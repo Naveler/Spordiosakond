@@ -9,9 +9,10 @@
   --1c: #d12c63;
   --2c: #ec673e;
 
-  --shadow-color: #bbbbbb;
+  --shadow-color: #d3d3d3; /* alt #bbbbbb */
   --box-shadow: 0 0 6px var(--shadow-color);
-  --border: 2px solid #d3d3d3;
+  --border-width: 2px;
+  --border: var(--border-width) solid #d3d3d3;
 
   /* Settings */
   --grid-gap: 1.2rem;
