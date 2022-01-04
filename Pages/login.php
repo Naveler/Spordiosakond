@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/universals.css">
     <link rel="stylesheet" href="./CSS/form.css">
-    <title>Loo konto</title>
+    <title>Logi sisse</title>
 </head>
 <body>
     <header> 
@@ -21,9 +21,9 @@
     <div class="container flex">
         <h1 class="smth center">Logi sisse</h1>
         <form action="register.php" method="POST" class="flex">  
-            <input type="email" class="form-input" placeholder="Email" required>
-            <input type="text" class="form-input" placeholder="Parool" required>
-            <input type="submit" value="Logi sisse" class="form-submit center">
+            <input type="email" class="form-input no-outline" placeholder="Email" required>
+            <input type="text" class="form-input no-outline" placeholder="Parool" required>
+            <input type="submit" value="Logi sisse" class="form-submit center no-outline">
         </form>
     </div>
 </body>

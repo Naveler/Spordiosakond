@@ -21,10 +21,10 @@
     <div class="container flex">
         <h1 class="smth center">Loo konto</h1>
         <form action="register.php" method="POST" class="flex">  
-            <input type="text" class="form-input" placeholder="Email" required>
-            <input type="text" class="form-input" placeholder="Parool" required>
-            <input type="text" class="form-input" placeholder="Korda parool" required>
-            <input type="submit" value="Loo konto" class="form-submit center">
+            <input type="text" class="form-input no-outline" placeholder="Email" required>
+            <input type="text" class="form-input no-outline" placeholder="Parool" required>
+            <input type="text" class="form-input no-outline" placeholder="Korda parool" required>
+            <input type="submit" value="Loo konto" class="form-submit center no-outline">
         </form>
     </div>
 </body>
