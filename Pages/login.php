@@ -19,10 +19,10 @@
         <?php require_once "./components/header.php" ?>
     </header>
     <div class="container flex">
-        <h1 class="smth center">SMTH</h1>
+        <h1 class="smth center">Logi sisse</h1>
         <form action="register.php" method="POST" class="flex">  
-            <input type="text" class="form-input" placeholder="Email">
-            <input type="text" class="form-input" placeholder="Parool">
+            <input type="email" class="form-input" placeholder="Email" required>
+            <input type="text" class="form-input" placeholder="Parool" required>
             <input type="submit" value="Logi sisse" class="form-submit center">
         </form>
     </div>
