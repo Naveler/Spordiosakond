@@ -133,20 +133,21 @@
 }
 
 .day:active::before {
-  opacity: 0.5;
+  filter: saturate(120%);
 }
 
 .has-activities {
   color: var(--txt-color);
 }
 
-.day > .day-name {
+.day-name {
   --font-size: 1.2rem;
   font-size: var(--font-size);
   font-weight: bold;
+  height: 55%;
 }
 
-.day > .day-name::first-letter {
+.day-name::first-letter {
   font-size: var(--font-size);
 }
 
@@ -172,11 +173,11 @@
     padding: 0;
   }
 
-  .day > .day-name {
+  .day-name {
     font-size: 0rem;
   }
 
-  .day > .day-name::first-letter {
+  .day-name::first-letter {
     font-size: 2rem;
   }
 }
