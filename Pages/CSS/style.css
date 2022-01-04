@@ -12,7 +12,7 @@
   gap: var(--grid-gap);
 }
 
-.element {
+.double-outline {
   position: relative;
 
   background-color: var(--el-color);
@@ -25,7 +25,7 @@
   transition: background-color 0.5s;
 }
 
-.element::before {
+.double-outline::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -39,31 +39,6 @@
   box-shadow: var(--box-shadow);
   padding: 0.5rem;
   z-index: -1;
-}
-
-.element.clickable {
-  cursor: pointer;
-}
-
-.element.clickable::before {
-  background-size: 200% 200%;
-  background-position: 100% 0%;
-  background-image: linear-gradient(
-    45deg,
-    var(--1c) 0%,
-    var(--2c) 50%,
-    transparent 50%
-  );
-  transition: background-position 0.2s, opacity 0.1s;
-}
-
-.element.clickable:hover::before,
-.element.clickable.current-day::before {
-  background-position: 0% 100%;
-}
-
-.element.clickable:active::before {
-  opacity: 0.5;
 }
 
 .activities-view {
@@ -83,16 +58,16 @@
   height: 100%;
 }
 
-.activities table td,
-.activities table th {
+.activities table th,
+.activities table td {
   border: var(--border-width) solid var(--shadow-color);
   padding: 0.2rem 0.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.activities table td:last-of-type,
-.activities table th:last-of-type {
+.activities table th:last-of-type,
+.activities table td:last-of-type {
   border-right-width: 0;
 }
 
@@ -105,6 +80,10 @@
   border-top-width: 0;
   border-bottom-width: 0;
   border-left-width: 0;
+}
+
+.activities table tr > td:first-of-type {
+  text-align: center;
 }
 
 .activities .excess {
@@ -132,6 +111,29 @@
   justify-content: center;
   align-items: center;
   color: #a3a3a3;
+  cursor: pointer;
+}
+
+.day::before {
+  background-size: 200% 200%;
+  background-position: 100% 0%;
+  background-image: linear-gradient(
+    45deg,
+    var(--1c) 0%,
+    var(--2c) 50%,
+    transparent 50%
+  );
+  transition: background-position 0.2s, opacity 0.1s;
+}
+
+.day:hover::before,
+.day:focus::before
+/* .day.current-day::before*/ {
+  background-position: 0% 100%;
+}
+
+.day:active::before {
+  opacity: 0.5;
 }
 
 .has-activities {

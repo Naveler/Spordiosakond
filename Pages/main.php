@@ -20,8 +20,15 @@
     </header>
     <div class="container flex">
       <div class="activities-view grid">
-        <div class="activities element">
+        <div class="activities double-outline">
           <table cellspacing="0" cellpadding="0">
+            <tr>
+              <th></th>
+              <th>asdasd</th>
+              <th>asdasd</th>
+              <th>asdasd</th>
+              <th>asdasd</th>
+            </tr>
             <tr>
               <td>17:00</td>
               <td>asdsads</td>
@@ -30,14 +37,14 @@
               <td>asdsads</td>
             </tr>
             <tr>
-              <td>shm_ detach</td>
+              <td>17:00</td>
               <td>shm_detach</td>
               <td>shm_detach</td>
               <td>shm_detach</td>
               <td>shm_detach</td>
             </tr>
             <tr>
-              <td>backyppping</td>
+              <td>18:00</td>
               <td>21294124</td>
               <td>222/12313</td>
               <td>loc 1123. asdsad str</td>
@@ -52,42 +59,42 @@
             </tr>
           </table>
         </div>
-        <div class="details element">
+        <div class="details double-outline">
 
         </div>
       </div>
       <div class="week grid">
-        <div class="day element clickable flex has-activities">
+        <button class="day double-outline no-outline flex has-activities">
           <span class="day-name">Esmaspäev</span>
           <span class="activity-amount">10</span>
-        </div>
-        <div class="day element clickable flex has-activities">
+        </button>
+        <button class="day double-outline no-outline flex has-activities">
           <span class="day-name">Teisipäev</span>
           <span class="activity-amount">7</span>
-        </div>
-        <div class="day element clickable flex">
+        </button>
+        <button class="day double-outline no-outline flex">
           <span class="day-name">Kolmapäev</span>
           <span class="activity-amount">0</span>
-        </div>
-        <div class="day element clickable flex">
+        </button>
+        <button class="day double-outline no-outline flex">
           <span class="day-name">Neljapäev</span>
           <span class="activity-amount">0</span>
-        </div>
-        <div class="day element clickable flex current-day has-activities">
+        </button>
+        <button class="day double-outline no-outline flex current-day has-activities">
           <span class="day-name">Reede</span>
           <span class="activity-amount">2</span>
-        </div>
-        <div class="day element clickable flex">
+        </button>
+        <button class="day double-outline no-outline flex">
           <span class="day-name">Laupäev</span>
           <span class="activity-amount">0</span>
-        </div>
-        <div class="day element clickable flex">
+        </button>
+        <button class="day double-outline no-outline flex">
           <span class="day-name">Pühapäeva</span>
           <span class="activity-amount">0</span>
-        </div>
+        </button>
       </div>
       <div class="quick-summary">
-        <div class="today element">
+        <div class="today double-outline">
           <h3>Täna</h3>
           <ul>
             <li>
@@ -104,7 +111,7 @@
             </li>
           </ul>
         </div>
-        <div class="tomorrow element">
+        <div class="tomorrow double-outline">
           <h3>Homme</h3>
           <ul>
             <li>
