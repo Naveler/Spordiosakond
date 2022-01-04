@@ -20,7 +20,38 @@
     </header>
     <div class="container flex">
       <div class="activities-view grid">
-        <div class="activities element"></div>
+        <div class="activities element">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td>17:00</td>
+              <td>asdsads</td>
+              <td>asdsads</td>
+              <td>asdsads</td>
+              <td>asdsads</td>
+            </tr>
+            <tr>
+              <td>shm_ detach</td>
+              <td>shm_detach</td>
+              <td>shm_detach</td>
+              <td>shm_detach</td>
+              <td>shm_detach</td>
+            </tr>
+            <tr>
+              <td>backyppping</td>
+              <td>21294124</td>
+              <td>222/12313</td>
+              <td>loc 1123. asdsad str</td>
+              <td>19.123.12312</td>
+            </tr>
+            <tr class="excess">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
         <div class="details element">
 
         </div>
