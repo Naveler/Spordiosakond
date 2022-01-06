@@ -24,34 +24,47 @@
           <table cellspacing="0" cellpadding="0">
             <tr>
               <th></th>
-              <th>asdasd</th>
-              <th>asdasd</th>
-              <th>asdasd</th>
-              <th>asdasd</th>
+              <th>Nimi</th>
+              <th>Toimumiskoht</th>
+              <th>Osalejate arv</th>
             </tr>
             <tr>
               <td>17:00</td>
-              <td>asdsads</td>
-              <td>asdsads</td>
-              <td>asdsads</td>
-              <td>asdsads</td>
+              <td>Backflipping</td>
+              <td>TÜ Raamatukogu 11</td>
+              <td>10/10</td>
             </tr>
-            <tr>
+            <tr class="signed-up">
               <td>17:00</td>
-              <td>shm_detach</td>
-              <td>shm_detach</td>
-              <td>shm_detach</td>
-              <td>shm_detach</td>
+              <td>Frontflipping</td>
+              <td>Emajõgi, Tartu</td>
+              <td>1/10</td>
             </tr>
-            <tr>
+            <tr class="signed-up">
               <td>18:00</td>
-              <td>21294124</td>
-              <td>222/12313</td>
-              <td>loc 1123. asdsad str</td>
-              <td>19.123.12312</td>
+              <td>Sideflipping</td>
+              <td>Õnne 13, Eesti</td>
+              <td>13/15</td>
+            </tr>
+            <tr>
+              <td>18:30</td>
+              <td>Upflipping</td>
+              <td>Lõunakeskus, Lõuna</td>
+              <td>0/10</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>Downflipping</td>
+              <td>High Hrothgar, Skyrim</td>
+              <td>6/30</td>
+            </tr>
+            <tr class="signed-up">
+              <td>19:45</td>
+              <td>Professionaalne saagimine</td>
+              <td>K-rauta, Helsinki</td>
+              <td>8/15</td>
             </tr>
             <tr class="excess">
-              <td></td>
               <td></td>
               <td></td>
               <td></td>

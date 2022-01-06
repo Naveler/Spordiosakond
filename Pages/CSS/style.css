@@ -82,8 +82,27 @@
   border-left-width: 0;
 }
 
-.activities table tr > td:first-of-type {
+.activities td:first-of-type {
   text-align: center;
+  padding-left: 1rem;
+}
+
+.signed-up {
+  position: relative;
+}
+
+.signed-up::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 0.25rem;
+  transform: translateY(-50%);
+
+  background-image: linear-gradient(45deg, var(--1c), var(--2c));
+  border-radius: 50%;
 }
 
 .activities .excess {
