@@ -1,7 +1,7 @@
 <?php
-    require "../Scripts/session.php";
-    $session = new Session;
-    $session->createSession();
+  require_once "../Scripts/session.php";
+  $session = new Session;
+  $session->createSession();
 ?>
 
 <!DOCTYPE html>
@@ -79,31 +79,24 @@
       <div class="week grid">
         <button class="day double-outline no-outline flex has-activities">
           <span class="day-name">Esmaspäev</span>
-          <span class="activity-amount">10</span>
         </button>
         <button class="day double-outline no-outline flex has-activities">
           <span class="day-name">Teisipäev</span>
-          <span class="activity-amount">7</span>
         </button>
         <button class="day double-outline no-outline flex">
           <span class="day-name">Kolmapäev</span>
-          <span class="activity-amount">0</span>
         </button>
         <button class="day double-outline no-outline flex">
           <span class="day-name">Neljapäev</span>
-          <span class="activity-amount">0</span>
         </button>
         <button class="day double-outline no-outline flex current-day has-activities">
           <span class="day-name">Reede</span>
-          <span class="activity-amount">2</span>
         </button>
         <button class="day double-outline no-outline flex">
           <span class="day-name">Laupäev</span>
-          <span class="activity-amount">0</span>
         </button>
         <button class="day double-outline no-outline flex">
           <span class="day-name">Pühapäeva</span>
-          <span class="activity-amount">0</span>
         </button>
       </div>
       <div class="quick-summary">

@@ -1,6 +1,6 @@
 .container {
   height: fit-content;
-  width: min(500px, 100vw);
+  width: min(500px, 95vw);
   padding: 5rem 4rem;
 
   position: absolute;

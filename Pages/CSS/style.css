@@ -1,12 +1,10 @@
 .container {
-  width: min(1300px, 100vw);
+  width: min(1200px, 95vw);
   height: fit-content;
 
   position: absolute;
   inset: 50%;
   transform: translate(-50%, -50%);
-
-  padding: 1rem;
 
   flex-direction: column;
   gap: var(--grid-gap);
@@ -58,25 +56,25 @@
   height: 100%;
 }
 
-.activities table th,
-.activities table td {
+.activities th,
+.activities td {
   border: var(--border-width) solid var(--shadow-color);
   padding: 0.2rem 0.4rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.activities table th:last-of-type,
-.activities table td:last-of-type {
+.activities th:last-of-type,
+.activities td:last-of-type {
   border-right-width: 0;
+  width: 20%;
+  text-align: center;
 }
 
-.activities table th {
+.activities th {
   border-top-width: 0;
   border-left-width: 0;
 }
 
-.activities table td {
+.activities td {
   border-top-width: 0;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -163,7 +161,6 @@
   --font-size: 1.2rem;
   font-size: var(--font-size);
   font-weight: bold;
-  height: 55%;
 }
 
 .day-name::first-letter {
