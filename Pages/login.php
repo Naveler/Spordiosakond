@@ -20,7 +20,7 @@
     </header>
     <div class="container flex">
         <h1 class="smth center">Logi sisse</h1>
-        <form action="register.php" method="POST" class="flex">  
+        <form action="login.php" method="POST" class="flex">
             <input type="email" class="form-input no-outline" placeholder="Email" required>
             <input type="text" class="form-input no-outline" placeholder="Parool" required>
             <input type="submit" value="Logi sisse" class="form-submit center no-outline">
