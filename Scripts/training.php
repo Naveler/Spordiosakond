@@ -16,3 +16,4 @@ if($yhendus==false){
 $query = 'Select * from trenn';
 
 $result = mysqli_query($yhendus, $query);
+echo $result;
