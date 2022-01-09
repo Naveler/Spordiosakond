@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Pages/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/register.php" afterDir="false" />
+    </list>
+    <list id="1bedf6f9-f8ec-428a-9b98-6518ba01fe8c" name="Testing Login-2" comment="Testing Login&#10;&#10;(cherry picked from commit c5c1e6d064818474f58f537b54215d5a44043ada)">
+      <changelist_data name="SanderPaasalu" email="sander.paasalu@khk.ee" date="1641720033000" />
+      <change beforePath="$PROJECT_DIR$/Scripts/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
       <updated>1639121695937</updated>
       <workItem from="1639121697063" duration="6606000" />
       <workItem from="1639305385799" duration="27000" />
-      <workItem from="1641718324203" duration="2874000" />
+      <workItem from="1641718324203" duration="3648000" />
     </task>
     <task id="LOCAL-00001" summary="Testing login db stuff">
       <created>1639122360862</created>
@@ -203,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641721049351</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Testing Login">
+      <created>1641721230990</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1641721230990</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
