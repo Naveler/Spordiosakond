@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="" />
+    <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="functional logout">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/components/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/login.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639121695937</updated>
       <workItem from="1639121697063" duration="6606000" />
+      <workItem from="1639305385799" duration="27000" />
+      <workItem from="1641718324203" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Testing login db stuff">
       <created>1639122360862</created>
@@ -135,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639125130128</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="functional logout">
+      <created>1641719025695</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641719025695</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed login directing to registering when trying to login">
+      <created>1641719333323</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641719333323</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,10 +173,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing login db stuff" />
     <MESSAGE value="redirect after login" />
-    <option name="LAST_COMMIT_MESSAGE" value="redirect after login" />
+    <MESSAGE value="functional logout" />
+    <MESSAGE value="fixed login directing to registering when trying to login" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed login directing to registering when trying to login" />
   </component>
 </project>
