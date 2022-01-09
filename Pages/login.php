@@ -21,8 +21,8 @@
     <div class="container flex">
         <h1 class="smth center">Logi sisse</h1>
         <form action="../Scripts/login.php" method="POST" class="flex">
-            <input type="email" class="form-input no-outline" placeholder="Email" required>
-            <input type="text" class="form-input no-outline" placeholder="Parool" required>
+            <input type="email" class="form-input no-outline" name="Email" placeholder="Email" required>
+            <input type="password" class="form-input no-outline" name="parool" placeholder="Parool" required>
             <input type="submit" value="Logi sisse" class="form-submit center no-outline">
         </form>
     </div>
