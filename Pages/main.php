@@ -1,6 +1,8 @@
 <?php
-  require_once "../Scripts/session.php";
     session_start();
+  require_once "../Scripts/session.php";
+  $session = new Session;
+  $session->createSession();
 ?>
 
 <!DOCTYPE html>
