@@ -13,7 +13,14 @@ if($yhendus==false){
     die("Failed to connect with MySQL: ". mysqli_connect_errno());
 }
 
+// mysql query
 $query = 'Select * from trenn';
 
+// sends query to db
 $result = mysqli_query($yhendus, $query);
-echo $result;
+var $training = $result;
+
+// function to get the result in other files
+function GetTraining(){
+    return($this -> training);
+}

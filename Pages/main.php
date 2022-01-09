@@ -1,8 +1,11 @@
 <?php
     session_start();
   require_once "../Scripts/session.php";
+  require_once "../Scripts/training.php";
   $session = new Session;
   $session->createSession();
+  $training = new Training;
+  $training->getTraining();
 ?>
 
 <!DOCTYPE html>
