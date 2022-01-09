@@ -6,7 +6,7 @@ $db_server = 'localhost';
 $db_andmebaas = 'tiim1ita19iktkhk_Spordiosakond';
 $db_kasutaja = 'tiim1ita19iktkhk_mfer';
 $db_salasona = 'qwertyqwertyqwerty';
-
+alert('Login.php has been reached');
 // ühendus andmebaasiga
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 

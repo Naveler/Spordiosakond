@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="functional logout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/components/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/login.php" afterDir="false" />
+    <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Scripts/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
       <updated>1639121695937</updated>
       <workItem from="1639121697063" duration="6606000" />
       <workItem from="1639305385799" duration="27000" />
-      <workItem from="1641718324203" duration="1368000" />
+      <workItem from="1641718324203" duration="1671000" />
     </task>
     <task id="LOCAL-00001" summary="Testing login db stuff">
       <created>1639122360862</created>
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641719333323</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Testing Login">
+      <created>1641719736233</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1641719736233</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +185,7 @@
     <MESSAGE value="redirect after login" />
     <MESSAGE value="functional logout" />
     <MESSAGE value="fixed login directing to registering when trying to login" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed login directing to registering when trying to login" />
+    <MESSAGE value="Testing Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Login" />
   </component>
 </project>
