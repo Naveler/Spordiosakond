@@ -1,4 +1,7 @@
 <?php
+require "session.php";
+$session = new Session;
+session_start();
 $db_server = 'localhost';
 $db_andmebaas = 'tiim1ita19iktkhk_Spordiosakond';
 $db_kasutaja = 'tiim1ita19iktkhk_mfer';
@@ -9,7 +12,6 @@ $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas)
 
 if($yhendus==false){
     die("Failed to connect with MySQL: ". mysqli_connect_errno());
-    echo '<script>alert("No db connection")</script>';
 }
 
 //
@@ -24,7 +26,7 @@ $email = mysqli_escape_string($yhendus, $email);
 $password = mysqli_escape_string($yhendus, $password);
 
 // query that will be sent to mysql
-$query = "Select * FROM KASUTAJA WHERE Kontakt='$email' AND Parool='$password'";
+$query = "Select * FROM kasutaja WHERE Kontakt='$email' AND Parool='$password'";
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
@@ -37,6 +39,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 if($count === 1){
     header("Location: ../Pages/MainPage.php");
+    $_SESSION["status"]='active';
     exit();
 }
 else {

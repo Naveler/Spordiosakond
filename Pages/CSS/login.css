@@ -1,38 +1,54 @@
-:root {
-  --bg-color: rgb(236, 236, 236); /* Background color */
-  --el-color: #242424; /* Element color */
-  --txt-color: rgb(236, 236, 236); /* Text color */
-
-  /* alt color: rgb(155, 23, 0) rgb(85, 32, 230)*/
-  --highlight-color: rgb(85, 32, 230); /* Highlight gradient color color */
-
-  --faded-color: #aaaaaa;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
-  width: 40%;
-  min-height: 55vh;
-
-  /* Position */
+.background {
+  width: 50%;
+  height: 50%;
   position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+form {
+  height: 520px;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(134, 134, 134);
-  justify-content: space-around;
+  border-radius: 10px;
+  border: 2px solid #d3d3d3;
+  padding: 50px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--bg-color);
 }
 
-.position {
-  text-align: center;
-  justify-content: space-between;
+form * {
+  letter-spacing: 0.5px;
 }
 
-:placeholder-shown {
+input {
+  display: block;
+  height: 15%;
+  border: 0.2;
+  width: 90%;
+  border-radius: 3rem;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: auto;
+}
+
+button {
+  margin-top: 15%;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
 }
