@@ -6,7 +6,6 @@ if ($action == 'logout') {
 }
 class Session {
     function createSession(){
-
         $_SESSION["status"]=true;
     }
     function endSession(){
