@@ -1,7 +1,11 @@
 <?php
+session_start();
+$action = $_GET['action'];
+if ($action == 'logout') {
+    endSession();
+}
 class Session {
     function createSession(){
-        session_start();
         $_SESSION["status"]=true;
     }
     function endSession(){

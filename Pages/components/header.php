@@ -15,7 +15,7 @@
             } else {
                 echo(
                     '<li class="nav-link">
-                        <a href="#" class="no-outline">Logi valja</a>
+                        <a href="session.php" class="no-outline" value="Logout">Logi valja</a>
                     </li>'
                 );
             }
