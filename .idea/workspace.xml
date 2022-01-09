@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,7 @@
       <updated>1639121695937</updated>
       <workItem from="1639121697063" duration="6606000" />
       <workItem from="1639305385799" duration="27000" />
-      <workItem from="1641718324203" duration="1872000" />
+      <workItem from="1641718324203" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="Testing login db stuff">
       <created>1639122360862</created>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641720033434</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Testing Login">
+      <created>1641720221799</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641720221799</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
