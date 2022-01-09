@@ -6,7 +6,7 @@ $db_server = 'localhost';
 $db_andmebaas = 'tiim1ita19iktkhk_Spordiosakond';
 $db_kasutaja = 'tiim1ita19iktkhk_mfer';
 $db_salasona = 'qwertyqwertyqwerty';
-alert('Login.php has been reached');
+
 // ühendus andmebaasiga
 $yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
 
@@ -38,11 +38,11 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
 if($count === 1){
-    header("Location: ../Pages/MainPage.php");
+    header("Location: ../Pages/main.php");
     $_SESSION["status"]='active';
     exit();
 }
 else {
-     header("Location: ../Pages/LoginPage.php");
+     header("Location: ../Pages/login.php");
      exit();
 }
