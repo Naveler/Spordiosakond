@@ -30,20 +30,16 @@ $query = "Select * FROM kasutaja WHERE Kontakt='$email' AND Parool='$password'";
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-echo '<pre>' . var_export($yhendus, true) . '</pre> Tere';
-echo '<pre>' . var_export($email, true) . '</pre> Tere';
-echo '<pre>' . var_export($password, true) . '</pre> Tere';
-echo '<pre>' . var_export($query, true) . '</pre> Tere';
-
 
 // gets how many rows were returned
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 // counts how many rows were returned
 $count = mysqli_num_rows($result);
-echo '<pre>' . var_export($count, true) . '</pre> Tere';
 if($count === 1){
+    ob_start();
     header("Location: ../Pages/main.php");
+    ob_end_flush();
     $_SESSION["status"]='active';
     exit();
 }
