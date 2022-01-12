@@ -2,7 +2,7 @@
     session_start();
   require_once "../Scripts/session.php";
   require_once "../Scripts/training.php";
-  $trainings = GetTraining();
+  //$trainings = GetTraining();
 ?>
 
 <!DOCTYPE html>

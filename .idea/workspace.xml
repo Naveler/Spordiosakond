@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="156ab16c-522e-44fd-87d9-b78f17f92ae8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Scripts/training.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/training.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/main.php" afterDir="false" />
     </list>
     <list id="1bedf6f9-f8ec-428a-9b98-6518ba01fe8c" name="Testing Login-2" comment="Testing Login&#10;&#10;(cherry picked from commit c5c1e6d064818474f58f537b54215d5a44043ada)">
       <changelist_data name="SanderPaasalu" email="sander.paasalu@khk.ee" date="1641720033000" />
@@ -50,7 +50,7 @@
       <workItem from="1639121697063" duration="6606000" />
       <workItem from="1639305385799" duration="27000" />
       <workItem from="1641718324203" duration="6017000" />
-      <workItem from="1641999098093" duration="3371000" />
+      <workItem from="1641999098093" duration="3547000" />
     </task>
     <task id="LOCAL-00001" summary="Testing login db stuff">
       <created>1639122360862</created>
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642002309155</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Getting trainings from db">
+      <created>1642002628583</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1642002628583</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
