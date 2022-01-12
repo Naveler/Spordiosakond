@@ -24,3 +24,4 @@ $training = $result;
 function GetTraining(){
     return($this -> training);
 }
+echo '<pre>'; print_r($training); echo '</pre>';
