@@ -3,7 +3,6 @@
   require_once "../Scripts/session.php";
   require_once "../Scripts/training.php";
   $trainings = GetTraining();
-echo '<pre>'; print_r($trainings); echo '</pre>';
 ?>
 
 <!DOCTYPE html>
