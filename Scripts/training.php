@@ -14,7 +14,7 @@ if($yhendus==false){
 }
 
 // mysql query
-$query = 'Select * from trenn';
+$query = 'Select trenni_id, nimi, kuupaev, algus_aeg, lopu_aeg, kus from trenn';
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
