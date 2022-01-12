@@ -18,7 +18,7 @@ $query = 'Select * from trenn';
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-var $training = $result;
+$training = $result;
 
 // function to get the result in other files
 function GetTraining(){
