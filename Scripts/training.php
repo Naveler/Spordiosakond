@@ -22,4 +22,4 @@ function GetTraining(){
     global $training;
     return $training;
 }
-echo '<pre>'; print_r($training); echo '</pre>'; print_r($training);
+//echo '<pre>'; print_r($training); echo '</pre>'; print_r($training);
