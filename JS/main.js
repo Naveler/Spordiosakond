@@ -1,16 +1,24 @@
 const detailsWindow = document.getElementById("details");
 const closeBtn = document.getElementById("closeBtn");
-let tableBtns = document.querySelectorAll(".activities tr");
-// tableBtns.item(0).remove()
+const tableBtns = document.querySelectorAll(".activities tr");
 
-console.log(tableBtns);
+let showDetails = false;
 
-let show = false;
-closeBtn.addEventListener("click", (e) => {
-    show = !show;
+tableBtns.forEach((element, index) => {
+    if (index != 0 || index != tableBtns.length -1)
+    {
+        element.addEventListener("click", () => {
+            showDetails = true;
+            detailsWindow.style.display = "flex"
+        })
+    }
+})
 
-    if (show) {
-        detailsWindow.style.display = "block"
+closeBtn.addEventListener("click", () => {
+    showDetails = !showDetails;
+
+    if (showDetails) {
+        detailsWindow.style.display = "flex"
     } else  {
         detailsWindow.style.display = "none";
     }

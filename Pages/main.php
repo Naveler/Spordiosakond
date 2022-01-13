@@ -1,7 +1,7 @@
 <?php
     session_start();
-  require_once "../Scripts/training.php";
-  $trainings = GetTraining();
+  // require_once "../Scripts/training.php";
+  // $trainings = GetTraining();
   if(!isset($_SESSION['status'])){
       $_SESSION['status'] = 'inactive';
   }
@@ -78,8 +78,15 @@
         <div class="details-placeholder flex">
           <p>Vajutage treeningu peale, et näha detaile</p>
         </div>
-        <div class="details double-outline" id="details">
+        <div class="details double-outline flex" id="details">
           <span class="close-btn" id="closeBtn"></span>
+          <div class="info">
+            <h2 class="name">Backflipping</h2>
+            <p class="time">16:00 - 16:45</p>
+            <p class="date">Kuupäev: 2022-01-24</p>
+            <p class="locaton">Kus: Otsi</p>
+            <button class="register-btn">Registreeri</button>
+          </div>
         </div>
       </div>
       <div class="week grid">
