@@ -1,5 +1,9 @@
 <?php
     session_start();
+if ($_SESSION["status"]=='active') {
+    header("Location: ../Pages/main.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
