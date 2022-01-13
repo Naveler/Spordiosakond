@@ -15,7 +15,7 @@
             } else if($_SESSION['status']=='active') {
                 echo(
                     '<li class="nav-link">
-                        <a href="../Scripts/logout.php" class="no-outline" value="Logout">Logi valja</a>
+                        <a href="../Scripts/logout.php" class="no-outline" value="Logout">Logi välja</a>
                     </li>'
                 );
             }
