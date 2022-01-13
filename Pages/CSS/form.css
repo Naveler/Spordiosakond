@@ -26,13 +26,9 @@ form {
   gap: 1rem;
 }
 
-form > input {
-  background-color: #e9e9e9;
-  color: var(--txt-color);
-}
-
 .form-input {
   width: 100%;
+  background-color: transparent;
 
   color: var(--txt-color);
   padding: 0.6rem 1.2rem;
