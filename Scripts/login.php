@@ -35,6 +35,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
 //echo '<pre>';print_r($result);echo '<pre>';print_r($count);echo '<pre>';print_r($row);echo '<pre>';print_r($yhendus->query($query));
+function GetRow(){
+    global $Row;
+    return $Row;
+}
 if($count >= 1){
     ob_start();
     header("Location: ../Pages/main.php");
