@@ -75,8 +75,11 @@
             </tr>
           </table>
         </div>
-        <div class="details double-outline">
-
+        <div class="details-placeholder flex">
+          <p>Vajutage treeningu peale, et näha detaile</p>
+        </div>
+        <div class="details double-outline" id="details">
+          <span class="close-btn" id="closeBtn"></span>
         </div>
       </div>
       <div class="week grid">
@@ -135,5 +138,6 @@
         </div>
       </div>
     </div>
+    <script src="../JS/main.js"></script>
   </body>
 </html>

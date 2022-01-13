@@ -44,6 +44,7 @@
   height: 40vh;
   grid-template: 1fr / repeat(7, 1fr);
   gap: inherit;
+  position: relative;
 }
 
 .activities {
@@ -54,6 +55,20 @@
 .activities table {
   width: 100%;
   height: 100%;
+}
+
+.activities tr {
+  cursor: pointer;
+}
+
+.activities tr:hover {
+  background-color: var(--shadow-color);
+}
+
+.activities tr:first-of-type:hover,
+.activities tr:last-of-type:hover {
+  background-color: var(--el-color);
+  cursor: initial;
 }
 
 .activities th,
@@ -107,10 +122,49 @@
   height: 100%;
 }
 
+.details-placeholder {
+  position: absolute;
+  grid-column-start: 5;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-placeholder p {
+  opacity: 0.4;
+  width: 75%;
+}
+
 .details {
   grid-area: span 1 / span 3;
   height: 100%;
   z-index: 10;
+  position: relative;
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+
+  border-radius: 50%;
+  border: 0.2rem solid var(--shadow-color);
+
+  width: 1.2rem;
+  aspect-ratio: 1;
+  z-index: 11;
+  transform: rotate(45deg);
+
+  cursor: pointer;
 }
 
 .week {
@@ -209,11 +263,8 @@
   }
 
   .activities,
+  .details-placeholder,
   .details {
     grid-area: m;
-  }
-
-  .details {
-    display: none;
   }
 }

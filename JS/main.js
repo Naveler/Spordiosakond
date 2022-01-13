@@ -1,9 +1,17 @@
-const tableBtns = document.querySelectorAll(".clickable");
-const detailsWindow = document.querySelector(".details-window");
+const detailsWindow = document.getElementById("details");
+const closeBtn = document.getElementById("closeBtn");
+let tableBtns = document.querySelectorAll(".activities tr");
+// tableBtns.item(0).remove()
 
-tableBtns.forEach (btn => {
-    btn.addEventListener("click", e => {
-        detailsWindow.classList.remove("hidden");
-        console.log("asdsad");
-    })
+console.log(tableBtns);
+
+let show = false;
+closeBtn.addEventListener("click", (e) => {
+    show = !show;
+
+    if (show) {
+        detailsWindow.style.display = "block"
+    } else  {
+        detailsWindow.style.display = "none";
+    }
 })
