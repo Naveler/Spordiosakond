@@ -3,7 +3,7 @@
     <a href="main.php" class="nav-title"><h1>SMTH</h1></a>
         <ul class="nav-links flex">
             <?php
-            if ($_SESSION['status']){
+            if ($_SESSION['status']=='inactive'){
                 echo(
                     '<li class="nav-link">
                         <a href="login.php" class="no-outline">Logi sisse</a>
@@ -12,10 +12,10 @@
                         <a href="register.php" class="no-outline">Loo konto</a>
                     </li>'
                 );
-            } else {
+            } else if($_SESSION['status']=='active') {
                 echo(
                     '<li class="nav-link">
-                        <a href="../Scripts/session.php" class="no-outline" value="Logout">Logi valja</a>
+                        <a href="../Scripts/logout.php" class="no-outline" value="Logout">Logi valja</a>
                     </li>'
                 );
             }

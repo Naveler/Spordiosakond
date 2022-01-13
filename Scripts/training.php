@@ -1,7 +1,4 @@
 <?php
-require "session.php";
-$session = new Session;
-session_start();
 $db_server = 'localhost';
 $db_andmebaas = 'tiim1ita19iktkhk_Spordiosakond';
 $db_kasutaja = 'tiim1ita19iktkhk_mfer';
@@ -22,6 +19,7 @@ $training = $result;
 
 // function to get the result in other files
 function GetTraining(){
-    return($this -> training);
+    global $training;
+    return $training;
 }
 echo '<pre>'; print_r($training); echo '</pre>'; print_r($training);

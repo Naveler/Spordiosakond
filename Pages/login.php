@@ -1,8 +1,5 @@
 <?php
     session_start();
-    require "../Scripts/session.php";
-    $session = new Session;
-    $session->createSession();
 ?>
 
 <!DOCTYPE html>

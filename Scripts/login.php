@@ -1,6 +1,4 @@
 <?php
-require "session.php";
-$session = new Session;
 session_start();
 $db_server = 'localhost';
 $db_andmebaas = 'tiim1ita19iktkhk_Spordiosakond';
