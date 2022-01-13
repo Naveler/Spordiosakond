@@ -15,7 +15,7 @@ $query = 'Select trenni_id, nimi, kuupaev, algus_aeg, lopu_aeg, kus from trenn';
 
 // sends query to db
 $result = mysqli_query($yhendus, $query);
-$training = $result;
+$training = $row = mysqli_fetch_array($result, MYSQLI_ASSOC);;
 
 // function to get the result in other files
 function GetTraining(){
